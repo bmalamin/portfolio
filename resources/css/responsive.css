@@ -1,0 +1,102 @@
+@media screen and (max-width: 1399.98px){
+        .row{
+    max-width: 100%;
+    padding:0 4rem;
+}
+    .scroll-down{
+       bottom: 13rem; 
+    }
+}
+@media screen and (max-width: 1199.98px){
+    .testimonial-item p{
+        width:80%;
+    }
+    .slide-content h1{
+        font-size: 5rem;
+    }
+    
+    .menu-item{
+        display:none;
+    }
+}
+
+
+
+@media screen and (max-width: 991.98px){
+ 
+    .grid-about-container,
+    .nested-grid-education-container,
+    .nested-grid-exprience-container{
+        grid-template-columns: 1fr;
+    }
+    .paul{
+        width:90%;
+    }
+    .testimonial-item p{
+        width:90%;
+    }
+    
+    .grid-portfolio-container{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .slide-content h1{
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+    html,
+    body{
+       font-size:61.5%; 
+    }
+    
+}
+
+
+
+@media screen and (max-width: 767.98px){
+          
+.nested-grid-about-container,
+.grid-description-about-container,
+.grid-contact-container,
+.grid-skill-container{
+    grid-template-columns: 1fr;
+}
+.grid-portfolio-container{
+    grid-template-columns: 1fr 1fr;
+}
+h1::after,
+h1::before{
+    width:70%;
+    margin:auto;
+}
+}
+
+@media screen and (max-width:575.98px){
+
+h1::after,
+h1::before{
+    width:100%;
+    margin:auto;
+}
+    .testimonial-item p{
+        font-size: 1.8rem;
+    }
+    .grid-portfolio-container{
+       grid-template-columns: 1fr; 
+    }
+}
+@media screen and (max-width:480.98px){
+       
+    .testimonial-item p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .menu-icon a i{
+        margin-left: 0;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .nested-grid-about-item h3{
+        float: none;
+    }
+}

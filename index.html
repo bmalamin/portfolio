@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Austara</title>
+    <!-- VENDORS FILES -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <!-- UI FILES -->
+    <link rel="stylesheet" href="vendors/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendors/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="vendors/css/jquery-ui.theme.min.css">
+    <!-- UIKIT FILES -->
+    <link rel="stylesheet" href="resources/css/uikit.min.css">
+    <!-- BARCHART PLUGIN FILES -->
+    <!-- LINEICON -->
+    <link rel="stylesheet" href="resources/css/swiper.min.css">
+    <!-- RESOURCES FILES -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+   <div class="swiper-container scrollify" id="home">
+       <div class="container">
+          <nav uk-sticky="start: 300; .uk-height-large;">
+              <div class="row">
+                 <div class="logo">
+                      <a href="#"><img src="resources/img/logo.png" alt="Logo"></a>
+                  </div>
+                   <div class="menu-icon">
+                      <a href="#" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+                  </div>
+                  <div class="menu-item">
+                      <ul>
+                          <li><a href="#home">home</a></li>
+                          <li><a href="#about">about me</a></li>
+                          <li><a href="#skill">skills</a></li>
+                          <li><a href="#resume">resume</a></li>
+                          <li><a href="#testimonial">testimonial</a></li>
+                          <li><a href="#portfolio">portfolio</a></li>
+                          <li><a href="#contact">contact me</a></li>
+                      </ul>
+                </div> 
+          </div>
+          <div class="menu-container" id="navbar" onclick="closeMenu()">
+              <div class="close-btn" onclick="closeMenu()">
+                 <a><i class="fa-regular fa-rectangle-xmark"></i></a>
+              </div>
+               <div class="menu-item2">
+                 <ul>
+                        <li><a onclick="closeMenu()" href="#home">home</a></li>
+                        <li><a onclick="closeMenu()" href="#about">about me</a></li>
+                        <li><a onclick="closeMenu()" href="#skill">skills</a></li>
+                        <li><a onclick="closeMenu()" href="#resume">resume</a></li>
+                        <li><a onclick="closeMenu()" href="#testimonial">testimonial</a></li>
+                        <li><a onclick="closeMenu()" href="#portfolio">portfolio</a></li>
+                        <li><a onclick="closeMenu()" href="#contact">contact me</a></li>
+                 </ul>
+             </div> 
+          </div>
+        </nav>
+      </div>
+       <div class="swiper">
+           <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(resources/img/hero12.jpg)">
+                   <div class="slide-content">
+                       <h1><span>web</span> Designer</h1>
+                       <div class="learn-more" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                           <a class="btn btn-hero" href="#">learn more</a>
+                       </div>
+                   </div>
+                   <div class="scroll-down">
+                    <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+                  </div>
+               </div>
+               <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(resources/img/hero3.jpg)">
+                     <div class="slide-content">
+                       <h1><span>Game</span> Developer</h1>
+                       <div class="learn-more" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                           <a class="btn btn-hero" href="#">learn more</a>
+                       </div>
+                   </div>
+                    <div class="scroll-down">
+                    <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+                  </div>
+               </div>
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(resources/img/hero12.jpg)">
+                   <div class="slide-content">
+                       <h1><span>Apps</span> Developer</h1>
+                       <div class="learn-more" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+                           <a class="btn btn-hero" href="#">learn more</a>
+                       </div>
+                   </div>
+                    <div class="scroll-down">
+                    <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+                  </div>
+               </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>     
+   </div>
+  <!--START HEADER SECTION-->
+  <header class="about-section scrollify" id="about">
+   <div class="row">
+     <div class="about">
+      <div id="accordion">
+           <h2>Values</h2>
+           <div>
+               <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+               </p>
+           </div>
+            <h2>Goals</h2>
+           <div>
+               <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+               </p>
+           </div>
+            <h2>Hobbies</h2>
+           <div>
+               <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+               </p>
+          </div>
+       </div>
+       <!--
+       <div class="acordion">
+        <ul uk-accordion="collapsible: false" >
+           <li>
+              <a class="uk-accordion-title" href="#">Values</a>
+              <div class="uk-accordion-content">
+                  <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quibusdam exercitationem hic, minus asperiores saepe labore dolores nemo eveniet quae.</p>
+              </div>
+          </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Goals</a>
+              <div class="uk-accordion-content">
+                  <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quibusdam exercitationem hic, minus asperiores saepe labore dolores nemo eveniet quae.</p>
+              </div>
+          </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Hobbies</a>
+              <div class="uk-accordion-content">
+                  <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quibusdam exercitationem hic, minus asperiores saepe labore dolores nemo eveniet quae.</p>
+              </div>
+          </li>
+      </ul>
+       </div>
+       <!--
+       <div class="grid-description-about-container">
+          <div class="grid-descriptio-about-item">
+              <h2>Values</h2>
+              <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+          </div>
+           <div class="grid-descriptio-about-item">
+              <h2>Goals</h2>
+              <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+          </div>
+           <div class="grid-descriptio-about-item">
+              <h2>Hobbies</h2>
+              <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+          </div>
+      </div>
+      -->
+    <div class="grid-about-container">
+        <div class="grid-about-item">
+           <div class="paul" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+           <img src="resources/img/about3.jpg" alt="paul" class="paul">
+           </div>
+        </div>
+        <div class="grid-about-item nested-grid" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <div class="about-text-box">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. <br><br>
+
+                Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.</p>
+            </div>
+            <div class="nested-grid-about-container">
+                <div class="nested-grid-about-item">
+                    <img src="resources/img/web-icon1.png" alt="">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+                </div>
+                 <div class="nested-grid-about-item">
+                    <img src="resources/img/graphic-icon.png" alt="">
+                    <h3>graphic designer</h3>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+                </div>
+                 <div class="nested-grid-about-item">
+                    <img src="resources/img/markating-icon.png" alt="">
+                    <h3>oneline markting</h3>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+                </div>
+                 <div class="nested-grid-about-item">
+                    <img src="resources/img/seo.png" alt="">
+                    <h3>seo</h3>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+                 </div>
+               </div>
+            </div>
+         </div>
+       </div>
+     </div>
+   </header>
+  <!--END HEADER SECTION-->
+  
+  <!--START SKILL SECTION-->
+   <div class="skill-section scrollify" id="skill">
+       <section class=" skill-padding">
+           <div class="row">
+               <div class="grid-skill-container">
+                   <div class="grid-skill-item">
+                       <div class="text-heading">
+                           <h3>My Skills</h3>
+                       </div>
+                       <div class="pragraph">
+                           <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. 
+                           <br><br>
+                           Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+                       </div>
+                       <div class="skill-ctn-btn" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                           <a class="btn btn-hero" href="#">contact me !</a>
+                       </div>
+                   </div>
+                   <div class="grid-skill-item">
+                       <div class="skill-part">
+                           <div class="skill-item">
+                               <div class="skill-header">
+                                   <h6 class="skill-title">Photoshop</h6>
+                                     <div class="skill-percentrage clearfix">
+                                       <div class="count-box">
+                                           <span class="counter">90</span>
+                                       </div>
+                                       %
+                                   </div>
+                               </div>
+                               <div class="skill-bar">
+                                   <div class="bar-inner">
+                                       <div class="bar progress-line"  data-width="90"></div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="skill-item">
+                               <div class="skill-header">
+                                   <h6 class="skill-title">Illustrator</h6>
+                                   <div class="skill-percentrage">
+                                       <div class="count-box">
+                                           <span class="counter">80</span>
+                                       </div>
+                                       %
+                                   </div>
+                               </div>
+                               <div class="skill-bar">
+                                   <div class="bar-inner">
+                                       <div class="bar progress-line" data-width="80"></div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="skill-item">
+                               <div class="skill-header">
+                                   <h6 class="skill-title">HTML / CSS</h6>
+                                   <div class="skill-percentrage">
+                                       <div class="count-box">
+                                           <span class="counter">90</span>
+                                       </div>
+                                       %
+                                   </div>
+                               </div>
+                               <div class="skill-bar">
+                                   <div class="bar-inner">
+                                       <div class="bar progress-line" data-width="90"></div>
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="skill-item">
+                               <div class="skill-header">
+                                   <h6 class="skill-title">PHP / MYSQL</h6>
+                                   <div class="skill-percentrage">
+                                       <div class="count-box">
+                                           <span class="counter">70</span>
+                                       </div>
+                                       %
+                                   </div>
+                               </div>
+                               <div class="skill-bar">
+                                   <div class="bar-inner">
+                                       <div class="bar progress-line" data-width="70"></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </div>
+  <!--END SKILL SECTION-->
+  
+  <!--START RESUME SECTION-->
+     <section class="resum-section scrollify" id="resume">
+         <div class="row">
+            <div class="uk-cover-container uk-height-medium">
+                   <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+            </div>
+            <hr class="uk-divider-icon">
+             <h2>Resume</h2>
+             <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+             <div class="learn-more" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <a class="btn btn-hero" href="#">Download Resume</a>
+             </div>
+         </div>
+     </section>
+  <!--END RESUME SECTION-->
+  <!--START TESTIMONIAL SECTION-->
+  <section class="testimonial-section scrollify" id="testimonial">
+      <div class="row">
+          <div class="grid-testimonial-container">
+              <div class="grid-education-item nested-grid-education-container">
+                  <div class="nested-grid-education-item">
+                      <h2>My Education</h2>
+                      <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+                      <br><br> 
+
+                      Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+                  </div>
+                  <div class="nested-grid-education-item nested-grid-design-container">
+                      <div class="nested-grid-design-item">
+                          <h3>Graphic Design Diploma</h3>
+                          <span>Reeves College  /  June 2008 - May 2010</span><br>
+                          <b>4.0 gpa</b>
+                          <hr>
+                          <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                      </div>
+                      <div class="nested-grid-design-item">
+                          <h3>CIT Diploma</h3>
+                          <span>Lethbridge College  /  June 2006 - May 2008</span><br>
+                          <b>4.0 gpa</b>
+                          <hr>
+                          <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+               <div class="grid-education-item nested-grid-exprience-container">
+                  <div class="nested-grid-exprience-item">
+                      <h2>Work Experience</h2>
+                      <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. 
+                      <br><br>
+                      Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+                  </div>
+                  <div class="nested-grid-exprience-item nested-grid-design-container">
+                      <div class="nested-grid-design-item">
+                          <h3>Lead WEb Designer</h3>
+                          <span>ABC Company, Saskatoon  /  June 2011 - Present</span><br>
+                          <b>3 years</b>
+                          <hr>
+                          <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                      </div>
+                      <div class="nested-grid-design-item">
+                          <h3>Junior Designer</h3>
+                          <span>XYZ Company, Lethbridge  /  June 2008 - May 2009</span><br>
+                          <b>1 years</b>
+                          <hr>
+                          <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                      </div>
+                       <div class="nested-grid-design-item">
+                          <h3>Web Developer</h3>
+                          <span>The Company, Lethbridge  /  June 2007 - May 2008</span><br>
+                          <b>2 years</b>
+                          <hr>
+                          <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                      </div>
+                  </div>
+               </div>
+             </div>
+           <div>
+         </div>
+      </div>
+       <div class="section-padding">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicinelit. Consequatur cupiditate error reprehenderit sapientsimilique ut quia, praesentium facilis quo expedita nullnisi"</p>
+                                  <h3>johan stone</h3>
+                            </div> 
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicinelit. Consequatur cupiditate error reprehenderit sapientsimilique ut quia, praesentium facilis quo expedita nullnisi"</p>
+                                  <h3>David Sen</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicinelit. Consequatur cupiditate error reprehenderit sapientsimilique ut quia, praesentium facilis quo expedita nullnisi."</p>
+                                  <h3>Russel Branson</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+  </section>
+  <!--END TESTIMONIAL SECTION-->
+  
+  <!--STAR PORTFOLIO SECTION-->
+  <section class="portfolio-section scrollify" id="portfolio">
+      <div class="row">
+          <div class="portfolio-text-box">
+              <h2>Portfolio</h2>
+              <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+          </div>
+          <div class="mixitup-btn" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+              <button type="button" data-filter="all">all</button>
+              <button type="button" data-filter=".web">Web</button>
+              <button type="button" data-filter=".psp">psp</button>
+              <button type="button" data-filter=".wordpress">wordpress</button>
+          </div>
+          <div class="grid-portfolio-container" uk-lightbox="animation: slide" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
+              <div class="mix  psp grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p1.jpg" data-caption="Caption 1">
+                  <img src="resources/img/p1.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix web wordpress grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p2.jpg" data-caption="Caption 2">
+                  <img src="resources/img/p2.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix wordpress grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p3.jpg" data-caption="Caption 3">
+                  <img src="resources/img/p3.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix web  psp grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p4.jpg" data-caption="Caption 4">
+                  <img src="resources/img/p4.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix wordpress grid-portfolio-item">
+                <div class="uk-card"> 
+                 <a href="resources/img/p5.jpg" data-caption="Caption 5">
+                  <img src="resources/img/p5.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix web  psp grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p6.jpg" data-caption="Caption 6">
+                  <img src="resources/img/p6.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix  psp grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p7.jpg" data-caption="Caption 7">
+                  <img src="resources/img/p7.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+               <div class="mix web wordpress grid-portfolio-item">
+                <div class="uk-card">
+                 <a href="resources/img/p2.jpg" data-caption="Caption 8">
+                  <img src="resources/img/p2.jpg" alt="">
+                  </a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--END PORTFOLIO SECTION-->
+  
+  <!--START CONTACT SECTION-->
+    <section class="contact-section scrollify" id="contact">
+        <div class="row">
+            <div class="grid-contact-container">
+                <div class="grid-contact-item">
+                    <h2>Contact Me</h2>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                    <p>122 33rd Street East
+                    <br> Saskatoon, SK
+                    <br>S7K 1R9
+                    </p>
+                    <br>
+                    <b>Email: <span>info@focan.com</span></b>
+                    <br>
+                    <b>Phone: <span>12-306-999-788</span></b>
+                </div>
+                <div class="grid-contact-item">
+                    <form action="#" method="post">
+                        <label for="Name">Name</label>
+                        <div class="single-form"><input type="text" name="Name" placeholder="Write your name*" required></div>
+                        <label for="Email">Email Address</label>
+                        <div class="single-form"><input type="text" name="Email" placeholder="Write your email*" required></div>
+                        <label for="About">About Yourself</label>
+                        <div class="single-form"><textarea name="About" cols="30" rows="10" placeholder="About yourself*" required></textarea></div>
+                        <div class="single-form-btn" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <input class="btn btn-full" type="submit" value="contact me !">
+                       </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+    </section>
+  <!--END CONTACT SECTION-->
+  
+  <!--START FOOTER SECTION-->
+  <div class="footer-section scrollify" id="footer">
+      <div class="row">
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+          <span>Copyright 2014 Focal - Built With Passion</span>
+          <div class="totap">
+              <a href="#" uk-totop uk-scroll></a>
+          </div>
+      </div>
+  </div>
+  <!--END FOOTER SECTION-->
+  
+  
+                   
+   <!-- JS SCRIPTS -->
+   <script src="vendors/js/jquery-3.6.2.min.js"></script>
+   <script src="vendors/js/jquery-ui.min.js"></script>
+   <script src="vendors/js/jquery.scrollify.js"></script>
+   <script src="vendors/js/uikit.min.js"></script>
+   <script src="vendors/js/uikit-icons.min.js"></script>
+   <script src="vendors/js/mixitup.min.js"></script>
+   <script src="vendors/js/swiper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
+   <script src="vendors/js/jquery.counterup.min.js"></script>
+   <script src="vendors/js/jquery.waypoints.min.js"></script>
+   <script src="https://kit.fontawesome.com/a3cf08fb2a.js" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.4/esm/ionicons.min.js"></script>
+   <script src="vendors/js/html5shiv.min.js"></script>
+   <script src="vendors/js/respond.min.js"></script>
+   <script src="vendors/js/selectivizr-min.js"></script>
+   <script src="resources/js/script.js"></script>  
+</body>
+</html>
